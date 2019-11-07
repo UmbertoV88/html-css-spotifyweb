@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-.container::after {
+.clearfix::after {
   content: "";
   clear: both;
   display: table;
@@ -66,15 +66,15 @@ i {
 hr {
     width: 158px;
 }
-/* -------------------- */
-/* MAIN */
-/* -------------------- */
+                        /* -------------------- */
+                        /*        MAIN */
+                        /* -------------------- */
 main {
     padding-left: 200px;
     background: linear-gradient(150deg, rgba(119,129,45,1) 0%, rgba(0,0,0,1) 100%, rgba(60,64,0,1) 100%);
     float: left;
-    height: 100vh;
-    width: 100%;
+    width: 100vw;
+    padding-bottom: 50px;
 }
 .container {
     padding: 15px 0;
@@ -84,8 +84,94 @@ main {
     height: 100%;
 }
 /* -------------------- */
-/* FOOTER */
+/* ROW */
 /* -------------------- */
+.row {
+    margin-bottom: 40px;
+}
+
+.row ul {
+    text-align: center;
+}
+
+.row li  {
+    list-style-type: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.row li a {
+    list-style-type: none;
+    text-transform: uppercase;
+    color: rgba(119,129,45,1);
+    font-size: 10px;
+    display: inline-block;
+    margin: 0 20px;
+    font-weight: 600;
+    padding-bottom: 2px;
+    height: 20px;
+}
+
+.row li a:hover {
+    border-bottom: 2px solid #1DB954;
+    color: white;
+    transition: color 0.2s;
+}
+/* -------------------- */
+/* ALBUM */
+/* -------------------- */
+
+h1 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.album {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.copertine {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 150px;
+}
+
+.copertine:hover {
+    -webkit-transform: scale(1.014);
+    -ms-transform: scale(1.014);
+    transform: scale(1.014);
+    transition: 0.2s;
+
+}
+.copertine img {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.copertine img:hover {
+    box-shadow: 0px 0px 36px 18px rgba(89,143,153,1);
+    transition: box-shadow 0.2s;
+
+}
+
+.copertine p {
+    margin: 10px 0;
+    color: white;
+}
+
+
+
+
+                        /* -------------------- */
+                        /*      FOOTER */
+                        /* -------------------- */
+
 footer {
     position: fixed;
     border-top: solid 1px black;
@@ -93,4 +179,13 @@ footer {
     width: 100%;
     background-color: blue;
     bottom: 0;
+}
+
+/* -------------------- */
+/* MEDIA */
+/* -------------------- */
+@media screen and (max-width:425px) {
+    .container {
+        background-color: green;
+    }
 }
