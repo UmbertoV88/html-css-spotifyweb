@@ -220,6 +220,12 @@ footer {
     font-size: 30px;
 }
 
+.slidecontainer p {
+    display: inline-block;
+    color: white;
+    font-size: 10px;
+}
+
 #myRange {
     width: 80%;
 }
