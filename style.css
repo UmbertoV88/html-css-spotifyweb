@@ -42,6 +42,9 @@ i {
     border-left: 3px solid #1DB954;
     color: white;
 }
+.fa-spotify {
+    display: none;
+}
 .mm-container {
     display: flex;
     flex-direction: column;
@@ -66,6 +69,9 @@ i {
 hr {
     width: 158px;
 }
+.smart {
+    display: none;
+}
                         /* -------------------- */
                         /*        MAIN */
                         /* -------------------- */
@@ -76,6 +82,11 @@ main {
     width: 100vw;
     padding-bottom: 50px;
 }
+
+.fa-bars {
+    display: none;
+}
+
 .container {
     padding: 15px 0;
     margin: 0 auto;
@@ -244,8 +255,81 @@ footer {
 /* -------------------- */
 /* MEDIA */
 /* -------------------- */
-@media screen and (max-width:425px) {
+@media screen and (max-width:768px) {
+    .row {
+        display: none;
+    }
+    .fa-bars {
+        display: block;
+        color: white;
+        font-size: 25px;
+    }
     .container {
-        background-color: green;
+        margin: 0;
+    }
+    .copertine {
+        width: auto;
+    }
+    .copertine img {
+        width: 100px;
+        height: 100px;
+    }
+    .riproduzione p {
+        display: none;
+    }
+}
+
+@media screen and (max-width:425px) {
+
+    .smart {
+        display: block;
+        color: white;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .full {
+        display: none;
+    }
+    .playlist {
+        display: none;
+    }
+    #main-menu {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    }
+    .user hr {
+        width: auto;
+    }
+    #main-menu img {
+        display: none;
+    }
+    .fa-spotify {
+        display: block;
+        color: white;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    main {
+        padding-left: 50px;
+        margin-left: 10PX;
+    }
+    .fa-bars {
+        margin: 0 0 10px 0;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .riproduzione {
+        width: auto;
+    }
+    .volume {
+        display: none;
+    }
+    .slidecontainer p {
+        display: none;
+    }
+    .f-container {
+        text-align: left;
     }
 }
