@@ -237,7 +237,7 @@ footer {
     font-size: 10px;
 }
 
-#myRange {
+.slider {
     width: 80%;
     -webkit-appearance: none;
     flex-grow: 1;
